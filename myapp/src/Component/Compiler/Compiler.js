@@ -1,48 +1,40 @@
 import { useState } from "react";
 import Editor from "@monaco-editor/react";
 import NavbarC from "./NavbarC";
-import Axios from "axios";
+import axios from "axios";
+import Loading from "../Loading";
 
 function Compiler() {
-  // State variable to set users source code
   const [userCode, setUserCode] = useState(``);
 
-  // State variable to set editors default language
   const [userLang, setUserLang] = useState("python");
 
-  // State variable to set editors default theme
   const [userTheme, setUserTheme] = useState("vs-dark");
 
-  // State variable to set editors default font size
   const [fontSize, setFontSize] = useState(20);
 
-  // State variable to set users input
   const [userInput, setUserInput] = useState("");
 
-  // State variable to set users output
   const [userOutput, setUserOutput] = useState("");
 
-  // Loading state variable to show spinner
-  // while fetching data
   const [loading, setLoading] = useState(false);
 
   const options = {
     fontSize: fontSize,
   };
 
-  // Function to call the compile endpoint
   function compile() {
     setLoading(true);
     if (userCode === ``) {
       return;
     }
 
-    // Post request to compile endpoint
-    Axios.post(`http://localhost:800/compile`, {
-      code: userCode,
-      language: userLang,
-      input: userInput,
-    })
+    axios
+      .post(`http://localhost:800/compile`, {
+        code: userCode,
+        language: userLang,
+        input: userInput,
+      })
       .then((res) => {
         setUserOutput(res.data.output);
       })
@@ -51,7 +43,6 @@ function Compiler() {
       });
   }
 
-  // Function to clear the output screen
   function clearOutput() {
     setUserOutput("");
   }
@@ -68,7 +59,6 @@ function Compiler() {
       />
       <div>
         <div className="flex-col">
-          {/* Editor code */}
           <div>
             <Editor
               options={options}
@@ -96,8 +86,9 @@ function Compiler() {
             <div className="ml-4">
               <h4>Output:</h4>
               {loading ? (
-                <div>Loading...</div>
+                <Loading />
               ) : (
+                // <div>Loading...</div>
                 <div>
                   <pre>{userOutput}</pre>
                   <button
