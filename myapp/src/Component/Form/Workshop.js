@@ -10,9 +10,10 @@ export default function Workshop() {
     date: "",
     time: "",
     description: "",
+    imagelink: "",
   });
 
-  const endpoint = "https://";
+  const endpoint = "http://localhost:800";
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -24,16 +25,42 @@ export default function Workshop() {
 
   const saveindb = async (e) => {
     e.preventDefault();
-    const response = await fetch(`${endpoint}`, {
+    const response = await fetch(`${endpoint}/Workshop`, {
       headers: {
         "Content-type": "application/json",
       },
       method: "POST",
-      body: { data },
+      body: JSON.stringify({
+        username: data.username,
+        email: data.email,
+        description: data.description,
+        date: data.date,
+        time: data.time,
+        imagelink: data.imagelink,
+        topic: data.topic,
+        cfhandle: data.cfhandle,
+      }),
     });
 
     const data1 = await response.json();
     console.log(data1);
+
+    if (data1.check === false) {
+      alert("Some error Occurred! ");
+    } else {
+      alert("yhu! Your form is submitted ");
+
+      setData({
+        username: "",
+        eventname: "",
+        linkedin: "",
+        email: "",
+        date: "",
+        time: "",
+        eventimage: "",
+        description: "",
+      });
+    }
   }; // this fun will save the details in db
 
   return (
@@ -67,6 +94,20 @@ export default function Workshop() {
             onChange={handleChange}
             id="topic"
             placeholder="topic"
+            className=" rounded-lg bg-white mt-2 p-2 focus:border-blue-500 focus:outline-none"
+          />
+        </div>
+        <div className="flex flex-col py-2">
+          <label htmlFor="imagelink" className="text-white">
+            THUMBNAIL IMAGE
+          </label>
+          <input
+            type="text"
+            name="imagelink"
+            value={data.imagelink}
+            onChange={handleChange}
+            id="imagelink"
+            placeholder="imagelink"
             className=" rounded-lg bg-white mt-2 p-2 focus:border-blue-500 focus:outline-none"
           />
         </div>

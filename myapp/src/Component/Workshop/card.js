@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "./Modal.css";
+import User from "../Form/Userregister";
 
 export default function WorkCard(props) {
   const [timeday, settimeday] = useState();
@@ -28,6 +30,19 @@ export default function WorkCard(props) {
         " sec"
     );
   }, 1000);
+
+  const [modal, setModal] = useState(false);
+
+  const toggleModal = () => {
+    setModal(!modal);
+  };
+
+  if (modal) {
+    document.body.classList.add("active-modal");
+  } else {
+    document.body.classList.remove("active-modal");
+  }
+
   return (
     <>
       <div className="flex-col">
@@ -38,9 +53,12 @@ export default function WorkCard(props) {
             alt=""
           />
           <div class="flex flex-col items-center p-6">
-            <h1 class="mb-2 text-xl font-medium">Event Name</h1>
+            <h1 class="mb-2 text-xl font-medium">DYNAMIC PROGRAMMING</h1>
             <h2>By Me</h2>
-            <button className="w-full my-5 py-2 bg-green shadow-lg shadow-teal-500/50 hover:shadow-teal-500/40 hover:bg-white hover:text-blue-950 text-white font-semibold rounded-lg">
+            <button
+              onClick={toggleModal}
+              className="w-full my-5 py-2 bg-green shadow-lg hover:bg-white hover:text-blue-950 text-white font-semibold rounded-lg"
+            >
               Register
             </button>
             <div>{props.date}</div>
@@ -51,6 +69,20 @@ export default function WorkCard(props) {
           <div>{timeday}</div>
           <div>{time}</div>
         </div>
+        {modal && (
+          <div className="modal bg-black">
+            <div onClick={toggleModal} className="overlay"></div>
+            <div className="modal-content">
+              <User />
+              <button
+                className="w-full my-5 py-2  text-white font-semibold rounded-lg"
+                onClick={toggleModal}
+              >
+                CLOSE
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </>
   );

@@ -36,11 +36,11 @@ const Teventschema = new Schema({
     type: String,
     default: getdate(),
   },
-  eventdate: {
+  date: {
     type: String,
     required: true,
   },
-  eventtime: {
+  time: {
     type: String,
     required: true,
   },
