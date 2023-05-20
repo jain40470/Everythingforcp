@@ -130,21 +130,3 @@ export default function App() {
     </>
   );
 }
-{
-  /* <Cfvis /> */
-}
-{
-  /* <Workshop /> */
-}
-{
-  /* <WorkshopD /> */
-}
-{
-  /* <WorkshopPage /> */
-}
-{
-  /* <Compiler /> */
-}
-{
-  /* <Ladder /> */
-}
