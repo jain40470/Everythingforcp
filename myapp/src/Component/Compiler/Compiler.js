@@ -2,7 +2,7 @@ import { useState } from "react";
 import Editor from "@monaco-editor/react";
 import NavbarC from "./NavbarC";
 import axios from "axios";
-import Loading from "../Loading";
+import Loading from './loadingC.gif';
 
 function Compiler() {
   const [userCode, setUserCode] = useState(``);
@@ -86,7 +86,9 @@ function Compiler() {
             <div className="ml-4">
               <h4>Output:</h4>
               {loading ? (
-                <Loading />
+                 <div>
+                     <img width={"20px"} src={Loading} alt="" />
+                  </div>
               ) : (
                 // <div>Loading...</div>
                 <div>
