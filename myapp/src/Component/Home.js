@@ -4,8 +4,10 @@ import './styles.css'; // Import the Tailwind styles
 const Home = () => {
   return (
     <div className="text-blue-800 min-h-screen flex flex-col justify-center items-center">
-      <div className='flex h-20 w-full justify-center items-center'>
-        <h1 className="text-4xl font-bold">"Unlock your coding prowess. Fuel your growth with our powerful resources."</h1>
+      <div className='flex h-20 w-full justify-center items-center mb-10 mt-10'>
+        <h1 className="text-4xl font-bold" style={{ fontFamily: 'Fira Code, monospace' }}>
+          "Unlock your coding prowess. Fuel your growth with our powerful resources."
+        </h1>
       </div>
       <img src="https://skoolofcode.us/wp-content/uploads/2022/11/cc1.jpg" alt="CP Image" className="w-80vw h-auto" />
       <div className="flex flex-col gap-6 mt-10">
