@@ -18,35 +18,35 @@ export default function App() {
 
   return (
     <>
-      <div className="w-full bg-blue-900">
-        <div className="px-4 py-2 flex justify-between">
+      <div className="w-full bg-blue-800">
+        <div className="px-4 py-4 flex justify-between">
           <div>
-            <h1 className="text-white font-bold text-2xl">PAPPU CODER</h1>
+            <h1 className="text-white font-bold text-2xl">EVERYTHING FOR CP</h1>
           </div>
 
           <div className="hidden md:flex">
             <ul className="flex text-white items-center">
               <button
                 type="button"
-                className="hover:text-cyan-400 font-extrabold px-5 text-xl"
+                className=""hover:text-blue-900 hover:bg-white font-extrabold px-5 text-xl"
                 onClick={() => {
                   setCount(0);
                 }}
               >
-                CF VIS
+                VISUALIZEME
               </button>
 
               <button
-                className="hover:text-cyan-400 font-extrabold px-5 text-xl"
+                className="hover:text-blue-900 hover:bg-white font-extrabold px-5 text-xl"
                 onClick={() => {
                   setCount(1);
                 }}
               >
-                AAA LADDER
+                ELEVATOR
               </button>
 
               <button
-                className="hover:text-cyan-400 font-extrabold px-5 text-xl"
+                className="hover:text-blue-900 hover:bg-white font-extrabold px-5 text-xl"
                 onClick={() => {
                   setCount(2);
                 }}
@@ -55,12 +55,12 @@ export default function App() {
               </button>
 
               <button
-                className="hover:text-cyan-400 font-extrabold px-5 text-xl"
+                className="hover:text-blue-900 hover:bg-white font-extrabold px-5 text-xl"
                 onClick={() => {
                   setCount(3);
                 }}
               >
-                SESSION
+                WORKSHOP
               </button>
             </ul>
           </div>
@@ -82,25 +82,25 @@ export default function App() {
           >
             <ul>
               <li>
-                <button
+                <button className="hover:text-blue-900 hover:bg-white"
                   onClick={() => {
                     setCount(0);
                   }}
                 >
-                  CF VIS
+                  VISUALIZEME
                 </button>
               </li>
               <li>
-                <button
+                <button className="hover:text-blue-900 hover:bg-white"
                   onClick={() => {
                     setCount(1);
                   }}
                 >
-                  AAA LADDER
+                  ELEVATOR
                 </button>
               </li>
               <li>
-                <button
+                <button className="hover:text-blue-900 hover:bg-white"
                   onClick={() => {
                     setCount(2);
                   }}
@@ -109,12 +109,12 @@ export default function App() {
                 </button>
               </li>
               <li>
-                <button
+                <button className="hover:text-blue-900 hover:bg-white"
                   onClick={() => {
                     setCount(2);
                   }}
                 >
-                  SESSION
+                  WORKSHOP
                 </button>
               </li>
             </ul>
