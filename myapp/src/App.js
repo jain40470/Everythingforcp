@@ -6,6 +6,7 @@ import Ladder from "./Component/Ladder/Ladder";
 import Cfvis from "./Component/Visualize/Cfvis";
 import WorkshopPage from "./Component/Workshop/WorkshopPage";
 import Footer from "./Component/Footer";
+import Home from "./Component/Home";
 
 export default function App() {
   const [count, setCount] = useState(0);
@@ -28,7 +29,17 @@ export default function App() {
             <ul className="flex text-white items-center">
               <button
                 type="button"
-                className=""hover:text-blue-900 hover:bg-white font-extrabold px-5 text-xl"
+                className="hover:text-blue-900 hover:bg-white font-extrabold px-5 text-xl"
+                onClick={() => {
+                  setCount(4);
+                }}
+              >
+                HOME
+              </button>
+
+              <button
+                type="button"
+                className="hover:text-blue-900 hover:bg-white font-extrabold px-5 text-xl"
                 onClick={() => {
                   setCount(0);
                 }}
@@ -82,7 +93,8 @@ export default function App() {
           >
             <ul>
               <li>
-                <button className="hover:text-blue-900 hover:bg-white"
+                <button
+                  className="hover:text-blue-900 hover:bg-white"
                   onClick={() => {
                     setCount(0);
                   }}
@@ -91,7 +103,8 @@ export default function App() {
                 </button>
               </li>
               <li>
-                <button className="hover:text-blue-900 hover:bg-white"
+                <button
+                  className="hover:text-blue-900 hover:bg-white"
                   onClick={() => {
                     setCount(1);
                   }}
@@ -100,7 +113,8 @@ export default function App() {
                 </button>
               </li>
               <li>
-                <button className="hover:text-blue-900 hover:bg-white"
+                <button
+                  className="hover:text-blue-900 hover:bg-white"
                   onClick={() => {
                     setCount(2);
                   }}
@@ -109,7 +123,8 @@ export default function App() {
                 </button>
               </li>
               <li>
-                <button className="hover:text-blue-900 hover:bg-white"
+                <button
+                  className="hover:text-blue-900 hover:bg-white"
                   onClick={() => {
                     setCount(2);
                   }}
@@ -121,7 +136,7 @@ export default function App() {
           </div>
         </div>
       </div>
-
+      {count === 4 && <Home />}
       {count === 0 && <Cfvis />}
       {count === 1 && <Ladder />}
       {count === 2 && <Compiler />}
