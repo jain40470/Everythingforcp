@@ -9,7 +9,7 @@ import Footer from "./Component/Footer";
 import Home from "./Component/Home";
 
 export default function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(4);
 
   const [Vis, setVis] = useState(false);
 
