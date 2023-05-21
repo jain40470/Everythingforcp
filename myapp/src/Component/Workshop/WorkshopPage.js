@@ -1,6 +1,6 @@
 import React from "react";
 import WorkshopD from "./Workshop";
-import WorkCard from "./card";
+import WorkCard from "./WorkCard";
 
 export default function WorkshopPage() {
   return (
