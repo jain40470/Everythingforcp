@@ -78,7 +78,7 @@ export default function App() {
               <button
                 className="hover:text-blue-900 hover:bg-white font-extrabold px-5 text-xl"
                 onClick={() => {
-                  setCount(4);
+                  setCount(5);
                 }}
               >
                 OUR TEAM
@@ -143,9 +143,10 @@ export default function App() {
                 </button>
               </li>
               <li>
-                <button className="hover:text-blue-900 hover:bg-white"
+                <button
+                  className="hover:text-blue-900 hover:bg-white"
                   onClick={() => {
-                    setCount(4);
+                    setCount(5);
                   }}
                 >
                   OUR TEAM
@@ -160,8 +161,8 @@ export default function App() {
       {count === 1 && <Ladder />}
       {count === 2 && <Compiler />}
       {count === 3 && <WorkshopPage />}
-      {count === 4 && <Team />}
-      {count !== 0 && <Footer />}
+      {count === 5 && <Team />}
+      {count !== 0 && count !== 5 && <Footer />}
     </>
   );
 }
