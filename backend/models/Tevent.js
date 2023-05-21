@@ -40,6 +40,10 @@ const Teventschema = new Schema({
     type: String,
     required: true,
   },
+  eventlink: {
+    type: String,
+    required: true,
+  },
   time: {
     type: String,
     required: true,

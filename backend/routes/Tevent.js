@@ -31,6 +31,7 @@ router.post(
         imagelink: req.body.imagelink,
         cfhandle: req.body.cfhandle,
         review: req.body.review,
+        eventlink: req.body.eventlink,
       });
       check = true;
       res.status(200).send({ check, tevent });
@@ -59,3 +60,5 @@ router.get(
 );
 
 module.exports = router;
+
+//

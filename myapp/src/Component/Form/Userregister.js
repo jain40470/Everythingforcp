@@ -1,7 +1,15 @@
 import React from "react";
 import { useState } from "react";
 
-export default function User() {
+export default function User(props) {
+  // Zoom Link,registerfor By,Date,time,workshopid
+  let a1 = props.eventid;
+  let b1 = props.eventdate;
+  let c1 = props.eventlink;
+  let d1 = props.eventtime;
+  let e1 = props.eventemail;
+  let j1 = props.topic;
+
   const [data, setData] = useState({
     username: "",
     email: "",
@@ -21,7 +29,7 @@ export default function User() {
   const saveindb = async (e) => {
     e.preventDefault();
 
-    const response = await fetch(`${host}/cryptoUser`, {
+    const response = await fetch(`${host}/Register`, {
       method: "POST",
 
       headers: {
@@ -31,6 +39,12 @@ export default function User() {
       body: JSON.stringify({
         username: data.username,
         email: data.email,
+        registerfor: j1,
+        eventemail: e1,
+        eventlink: c1,
+        eventid: a1,
+        eventdate: b1,
+        eventtime: d1,
       }),
     });
 
@@ -90,3 +104,5 @@ export default function User() {
     </>
   );
 }
+
+//

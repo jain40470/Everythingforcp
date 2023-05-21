@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-
 const { Schema } = mongoose;
 
 const Tuserschema = new Schema({
@@ -19,6 +18,22 @@ const Tuserschema = new Schema({
     type: String,
     required: true,
   },
+  eventlink: {
+    type: String,
+    required: true,
+  },
+  eventid: {
+    type: String,
+    required: true,
+  },
+  eventtime: {
+    type: String,
+    required: true,
+  },
+  eventdate: {
+    type: String,
+    required: true,
+  },
 });
 
-module.exports = mongoose.model("tuser", Tuserschema);
+module.exports = mongoose.model("tusers", Tuserschema);

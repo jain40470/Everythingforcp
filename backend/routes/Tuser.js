@@ -15,16 +15,22 @@ router.post(
     let check = false;
 
     if (!errors.isEmpty()) {
-      return res.status(400).json({ check, errors: errors.array() });
+      return res.status(400);
     }
 
     try {
-      let tevent = await Tevent.create({
+      let tuser = await Tuser.create({
         username: req.body.username,
         email: req.body.email,
+        registerfor: req.body.registerfor,
+        eventemail: req.body.eventemail,
+        eventid: req.body.eventid,
+        eventlink: req.body.eventlink,
+        eventdate: req.body.eventdate,
+        eventtime: req.body.eventtime,
       });
       check = true;
-      res.status(200).send({ check, tevent });
+      res.status(200).send({ check, tuser });
     } catch (err) {
       console.log(err);
       res.status(500).json({ check, error: "Some error occured" });
@@ -33,3 +39,5 @@ router.post(
 );
 
 module.exports = router;
+
+//

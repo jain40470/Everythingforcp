@@ -54,7 +54,11 @@ export default function WorkCard(props) {
           />
           <div class="flex flex-col items-center p-6">
             <h1 class="mb-2 text-xl font-medium">DYNAMIC PROGRAMMING</h1>
+<<<<<<< Updated upstream:myapp/src/Component/Workshop/WorkCard.js
             <h2>By <a href={`https://codeforces.com/profile/${props.userHandle}`} rel="noreferrer" target="_blank">{props.userHandle}</a></h2>
+=======
+            <h2>By {props.setter}</h2>
+>>>>>>> Stashed changes:myapp/src/Component/Workshop/card.js
             <button
               onClick={toggleModal}
               className="w-full my-5 py-2 bg-green shadow-lg hover:bg-white hover:text-blue-950 text-white font-semibold rounded-lg"
@@ -73,7 +77,14 @@ export default function WorkCard(props) {
           <div className="modal bg-black">
             <div onClick={toggleModal} className="overlay"></div>
             <div className="modal-content">
-              <User />
+              <User
+                eventid={props.eventid}
+                eventtime={props.time}
+                eventlink={props.eventlink}
+                eventemail={props.eventemail}
+                topic={props.topic}
+                eventdate={props.date}
+              />
               <button
                 className="w-full my-5 py-2  text-white font-semibold rounded-lg"
                 onClick={toggleModal}

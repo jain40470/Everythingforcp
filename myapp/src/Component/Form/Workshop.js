@@ -11,6 +11,7 @@ export default function Workshop() {
     time: "",
     description: "",
     imagelink: "",
+    eventlink: "",
   });
 
   const endpoint = "http://localhost:800";
@@ -39,6 +40,7 @@ export default function Workshop() {
         imagelink: data.imagelink,
         topic: data.topic,
         cfhandle: data.cfhandle,
+        eventlink: data.eventlink,
       }),
     });
 
@@ -59,6 +61,10 @@ export default function Workshop() {
         time: "",
         eventimage: "",
         description: "",
+        eventlink: "",
+        cfhandle: "",
+        topic: "",
+        imagelink: "",
       });
     }
   }; // this fun will save the details in db
@@ -112,12 +118,26 @@ export default function Workshop() {
           />
         </div>
         <div className="flex flex-col py-2">
+          <label htmlFor="eventlink" className="text-white">
+            Zoom Link
+          </label>
+          <input
+            type="text"
+            name="eventlink"
+            value={data.eventlink}
+            onChange={handleChange}
+            id="eventlink"
+            placeholder="eventlink"
+            className=" rounded-lg bg-white mt-2 p-2 focus:border-blue-500 focus:outline-none"
+          />
+        </div>
+        <div className="flex flex-col py-2">
           <label htmlFor="cfhandle" className="text-white">
             CF handle
           </label>
           <input
             type="text"
-            name="linkedin"
+            name="cfhandle"
             value={data.cfhandle}
             onChange={handleChange}
             id="cfhandle"
