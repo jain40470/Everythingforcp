@@ -54,7 +54,7 @@ export default function WorkCard(props) {
           />
           <div class="flex flex-col items-center p-6">
             <h1 class="mb-2 text-xl font-medium">DYNAMIC PROGRAMMING</h1>
-            <h2>By Me</h2>
+            <h2>By <a href={`https://codeforces.com/profile/${props.userHandle}`} rel="noreferrer" target="_blank">{props.userHandle}</a></h2>
             <button
               onClick={toggleModal}
               className="w-full my-5 py-2 bg-green shadow-lg hover:bg-white hover:text-blue-950 text-white font-semibold rounded-lg"
