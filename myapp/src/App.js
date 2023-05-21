@@ -136,7 +136,7 @@ export default function App() {
                 <button
                   className="hover:text-blue-900 hover:bg-white"
                   onClick={() => {
-                    setCount(2);
+                    setCount(3);
                   }}
                 >
                   WORKSHOP
@@ -145,7 +145,7 @@ export default function App() {
               <li>
                 <button className="hover:text-blue-900 hover:bg-white"
                   onClick={() => {
-                    setCount(3);
+                    setCount(4);
                   }}
                 >
                   OUR TEAM
