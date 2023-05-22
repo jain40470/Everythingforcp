@@ -191,7 +191,7 @@ export default function Cfvis() {
       {isLoading ? (
         <Loading />
       ) : (
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap justify-center">
           {submissions !== undefined && (
             <Table
               user={text}
