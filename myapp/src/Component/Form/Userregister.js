@@ -24,7 +24,8 @@ export default function User(props) {
     });
   };
 
-  const host = "http://localhost:800";
+  // const host = "http://localhost:800";
+  const host = "https://yoyo-gdyv.onrender.com";
 
   const saveindb = async (e) => {
     e.preventDefault();

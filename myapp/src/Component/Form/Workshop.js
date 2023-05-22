@@ -14,7 +14,8 @@ export default function Workshop() {
     eventlink: "",
   });
 
-  const endpoint = "http://localhost:800";
+  // const host = "http://localhost:800";
+  const host = "https://yoyo-gdyv.onrender.com";
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -26,7 +27,7 @@ export default function Workshop() {
 
   const saveindb = async (e) => {
     e.preventDefault();
-    const response = await fetch(`${endpoint}/Workshop`, {
+    const response = await fetch(`${host}/Workshop`, {
       headers: {
         "Content-type": "application/json",
       },

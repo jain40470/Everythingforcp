@@ -7,7 +7,8 @@ import WorkCard from "./WorkCard";
 export default function WorkshopPage() {
   const [data, setData] = useState([]);
 
-  const host = "http://localhost:800";
+  // const host = "http://localhost:800";
+  const host = "https://yoyo-gdyv.onrender.com";
 
   useEffect(() => {
     const fun = async () => {

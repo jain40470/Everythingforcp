@@ -58,7 +58,7 @@ router.get(
       res.status(200).send(sessionsarray);
     } catch (err) {
       console.log(err);
-      res.status(500).json({ error: "Some error occured" });
+      res.status(500).json({ error: err });
     }
   }
 );
