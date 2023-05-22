@@ -37,7 +37,6 @@ export default function Workshop() {
         description: data.description,
         date: data.date,
         time: data.time,
-        imagelink: data.imagelink,
         topic: data.topic,
         cfhandle: data.cfhandle,
         eventlink: data.eventlink,
@@ -64,7 +63,6 @@ export default function Workshop() {
         eventlink: "",
         cfhandle: "",
         topic: "",
-        imagelink: "",
       });
     }
   }; // this fun will save the details in db
@@ -100,20 +98,6 @@ export default function Workshop() {
             onChange={handleChange}
             id="topic"
             placeholder="topic"
-            className=" rounded-lg bg-white mt-2 p-2 focus:border-blue-500 focus:outline-none"
-          />
-        </div>
-        <div className="flex flex-col py-2">
-          <label htmlFor="imagelink" className="text-white">
-            THUMBNAIL IMAGE
-          </label>
-          <input
-            type="text"
-            name="imagelink"
-            value={data.imagelink}
-            onChange={handleChange}
-            id="imagelink"
-            placeholder="imagelink"
             className=" rounded-lg bg-white mt-2 p-2 focus:border-blue-500 focus:outline-none"
           />
         </div>

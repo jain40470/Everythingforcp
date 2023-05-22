@@ -53,10 +53,16 @@ export default function WorkCard(props) {
             alt=""
           />
           <div class="flex flex-col items-center p-6">
-            <h2>By {props.setter}</h2>
+            <h1 className="font-bold text-5xl py-3">{props.topic}</h1>
+            <h2 className="font-bold">By {props.setter}</h2>
+            <h2>
+              <a href={`https://codeforces.com/profile/${props.cfhandle}`}>
+                {props.cfhandle}
+              </a>
+            </h2>
             <button
               onClick={toggleModal}
-              className="w-full my-5 py-2 bg-green shadow-lg hover:bg-white hover:text-blue-950 text-white font-semibold rounded-lg"
+              className="w-full my-5 py-2 text-xl bg-green shadow-lg hover:bg-white hover:text-blue-950 text-white font-semibold rounded-lg"
             >
               Register
             </button>

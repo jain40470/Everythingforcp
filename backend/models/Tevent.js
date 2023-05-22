@@ -20,10 +20,6 @@ const Teventschema = new Schema({
     type: String,
     required: true,
   },
-  imagelink: {
-    type: String,
-    default: "",
-  },
   topic: {
     type: String,
     required: true,

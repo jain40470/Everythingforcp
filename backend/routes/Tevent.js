@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const Tevent = require("../models/Tevent");
 const { body, validationResult } = require("express-validator");
+const eventpropose = require("../handlemail/eventpropose");
 
 router.post(
   "/",
@@ -28,12 +29,15 @@ router.post(
         date: req.body.date,
         time: req.body.time,
         description: req.body.description,
-        imagelink: req.body.imagelink,
         cfhandle: req.body.cfhandle,
         review: req.body.review,
         eventlink: req.body.eventlink,
       });
+
       check = true;
+
+      eventpropose(req.body.email, req.body.username);
+
       res.status(200).send({ check, tevent });
     } catch (err) {
       console.log(err);

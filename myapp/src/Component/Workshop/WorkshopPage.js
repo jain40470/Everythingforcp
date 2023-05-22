@@ -35,6 +35,7 @@ export default function WorkshopPage() {
               eventid={item._id}
               time={item.time}
               setter={item.username}
+              cfhandle={item.cfhandle}
             />
           );
         })}

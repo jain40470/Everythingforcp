@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const Tuser = require("../models/Tuser");
 const { body, validationResult } = require("express-validator");
+const Eventuser = require("../handlemail/Eventuser");
 
 router.post(
   "/",
@@ -30,6 +31,16 @@ router.post(
         eventtime: req.body.eventtime,
       });
       check = true;
+
+      Eventuser(
+        req.body.registerfor,
+        req.body.eventdate,
+        req.body.username,
+        req.body.eventtime,
+        req.body.email,
+        req.body.eventlink
+      );
+
       res.status(200).send({ check, tuser });
     } catch (err) {
       console.log(err);

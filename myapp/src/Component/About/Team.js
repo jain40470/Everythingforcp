@@ -6,7 +6,6 @@ export default function Team() {
     <div className="flex place-content-evenly items-center">
       <CardTeam name="Akash Jain" CF_id="jain40470" />
       <CardTeam name="Amandeep Singh" CF_id="amandeep360" />
-      <CardTeam name="Asish Kumar" CF_id="asishkumar" />
     </div>
   );
 }
