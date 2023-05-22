@@ -24,8 +24,8 @@ export default function WorkshopPage() {
   }, []);
 
   return (
-    <div className="mb-20">
-      <div className="flex place-content-evenly pt-20 mb-40">
+    <div className="my-20">
+      <div className="flex flex-wrap justify-evenly mb-20">
         {data.map((item) => {
           return (
             <WorkCard
@@ -45,5 +45,6 @@ export default function WorkshopPage() {
     </div>
   );
 }
+// place-content-evenly pt-20 mb-40
 
 // <WorkCard date="2024-05-20" time="11:22" />;

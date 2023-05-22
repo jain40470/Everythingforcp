@@ -20,7 +20,7 @@ export default function App() {
 
   return (
     <>
-      <div className="w-full bg-blue-800">
+      <div className="w-full bg-blue-900">
         <div className="px-4 py-4 flex justify-between">
           <div>
             <h1 className="text-white font-bold text-2xl">EVERYTHING FOR CP</h1>
@@ -102,6 +102,16 @@ export default function App() {
             }
           >
             <ul>
+              <li>
+                <button
+                  className="hover:text-blue-900 hover:bg-white"
+                  onClick={() => {
+                    setCount(4);
+                  }}
+                >
+                  HOME
+                </button>
+              </li>
               <li>
                 <button
                   className="hover:text-blue-900 hover:bg-white"

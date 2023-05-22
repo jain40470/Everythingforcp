@@ -54,7 +54,7 @@ export default function User(props) {
     if (data1.check === false) {
       alert("Some error Occurred! ");
     } else {
-      alert("yhu! Meet in Event");
+      alert("YUP successfully registered");
 
       setData({
         username: "",
@@ -65,9 +65,9 @@ export default function User(props) {
 
   return (
     <>
-      <div className=" bg-blue-950  flex flex-col justify-center">
+      <div className=" bg-blue-900  flex flex-col justify-center">
         <form className="max-w-[400px] w-full mx-auto rounded-lg bg-blue-950 p-8 px-8">
-          <h2 className="text-4xl dark:text-white font-bold text-center">
+          <h2 className="text-4xl text-white font-bold text-center">
             Register here
           </h2>
           <div className="flex flex-col text-gray-400 py-2">

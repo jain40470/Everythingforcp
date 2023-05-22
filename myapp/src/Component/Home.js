@@ -18,7 +18,7 @@ const Home = () => {
         alt="CP Image"
         className="w-80vw h-auto"
       />
-      <div className="flex flex-col gap-6 mt-10">
+      <div className="flex flex-wrap gap-6 mt-10">
         <h2 className="text-4xl font-bold flex justify-center items-center h-16">
           Resources
         </h2>

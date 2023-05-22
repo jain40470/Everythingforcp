@@ -24,7 +24,7 @@ const NavbarC = ({
       <div className="text-2xl text-center font-bold my-5">APNA COMPILER</div>
       <div className="flex place-content-evenly">
         <Select
-          className="text-xl bg-black"
+          className="text-xl"
           options={languages}
           value={userLang}
           onChange={(e) => setUserLang(e.value)}

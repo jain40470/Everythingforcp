@@ -50,7 +50,7 @@ export default function Workshop() {
     if (data1.check === false) {
       alert("Some error Occurred! ");
     } else {
-      alert("yhu! Your form is submitted ");
+      alert("Yupp! Your form is submitted ");
 
       setData({
         username: "",
@@ -70,8 +70,8 @@ export default function Workshop() {
 
   return (
     <div className="flex flex-col justify-center">
-      <form className="max-w-[400px] w-full mx-auto rounded-lg bg-blue-950 p-8 px-8">
-        <h2 className="text-4xl dark:text-white font-bold text-center">
+      <form className="max-w-[400px] w-full mx-auto rounded-lg bg-blue-900 p-8 px-8">
+        <h2 className="text-4xl text-white font-bold text-center">
           WANT TO CONDUCT A WORKSHOP
         </h2>
         <div className="flex flex-col py-2">

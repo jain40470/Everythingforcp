@@ -62,7 +62,7 @@ export default function WorkCard(props) {
             </h2>
             <button
               onClick={toggleModal}
-              className="w-full my-5 py-2 text-xl bg-green shadow-lg hover:bg-white hover:text-blue-950 text-white font-semibold rounded-lg"
+              className="w-full my-5 py-2 text-xl shadow-lg bg-white text-blue-950  hover:bg-blue-900 hover:text-white  font-semibold rounded-lg"
             >
               Register
             </button>
