@@ -4,7 +4,7 @@ import "./styles.css"; // Import the Tailwind styles
 const Home = () => {
   return (
     <div className="text-blue-800 min-h-screen flex flex-col justify-center items-center">
-      <div className="flex h-20 w-full justify-center items-center mb-10 mt-10">
+      <div className="flex h-20 w-full justify-center items-center mb-10 my-20">
         <h1
           className="text-4xl font-bold text-center"
           style={{ fontFamily: "Fira Code, monospace" }}
