@@ -88,32 +88,8 @@ export default function Table(props) {
     return { color: col };
   };
   return (
-    <div className="flex justify-between">
-      {/* problems table */}
-      {/* <div className=""> */}
+    <div>
       <table className="border-2 border-black">
-        <tbody>
-          <tr className="bg-blue-800 text-white">
-            <th className="px-5 py-3">Number of problems of </th>
-            <th className="px-5 py-3">{props.user}</th>
-          </tr>
-          <tr className="hover:bg-slate-400">
-            <td className="px-5 py-3">Tried</td>
-            <td className="px-5 py-3">{problemstried(props.sub)}</td>
-          </tr>
-          <tr className="hover:bg-slate-400">
-            <td className="px-5 py-3">Solved</td>
-            <td className="px-5 py-3">{problemsolved(props.sub)}</td>
-          </tr>
-          <tr className="hover:bg-slate-400">
-            <td className="px-5 py-3">Max Attempts</td>
-            <td className="px-5 py-3">{maxattempts(props.sub)}</td>
-          </tr>
-        </tbody>
-      </table>
-      {/* </div> */}
-      {/* <div className=""> */}
-      <table className="my-12 border-2 border-black">
         <tbody>
           <tr className="bg-blue-800 text-white">
             <th className="px-5 py-3">Contests of </th>
@@ -145,7 +121,26 @@ export default function Table(props) {
           </tr>
         </tbody>
       </table>
-      {/* </div> */}
+      <table className="my-12 border-2 border-black">
+        <tbody>
+          <tr className="bg-blue-800 text-white">
+            <th className="px-5 py-3">Number of problems of </th>
+            <th className="px-5 py-3">{props.user}</th>
+          </tr>
+          <tr className="hover:bg-slate-400">
+            <td className="px-5 py-3">Tried</td>
+            <td className="px-5 py-3">{problemstried(props.sub)}</td>
+          </tr>
+          <tr className="hover:bg-slate-400">
+            <td className="px-5 py-3">Solved</td>
+            <td className="px-5 py-3">{problemsolved(props.sub)}</td>
+          </tr>
+          <tr className="hover:bg-slate-400">
+            <td className="px-5 py-3">Max Attempts</td>
+            <td className="px-5 py-3">{maxattempts(props.sub)}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 }
