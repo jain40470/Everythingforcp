@@ -46,7 +46,7 @@ export default function WorkCard(props) {
   return (
     <>
       <div className="flex-col">
-        <div class="bg-blue-900 flex flex-col items-center rounded-lg text-white mx-10 mb-5">
+        <div class="bg-[#D77F7F] flex flex-col items-center rounded-lg text-white mx-10 mb-5">
           <img
             class="h-50 w-full rounded-t-lg object-cover md:h-30 md:w-48 md:rounded-none md:rounded-l-lg"
             src={""}
@@ -54,26 +54,39 @@ export default function WorkCard(props) {
           />
           <div class="flex flex-col items-center p-6">
             <h1 className="font-bold text-5xl py-3">{props.topic}</h1>
-            <h2 className="font-bold">By {props.setter}</h2>
-            <h2>
-              <a href={`https://codeforces.com/profile/${props.cfhandle}`}>
-                {props.cfhandle}
-              </a>
-            </h2>
+            <div className="flex">
+              <div className="flex flex-col justify-center my-5">
+                <div>Date : {props.date}</div>
+                <div>Time : {props.time}</div>
+              </div>
+              <div className="py-5 px-4">
+                <h2 className="font-bold">By {props.setter}</h2>
+                <h2>
+                  <a href={`https://codeforces.com/profile/${props.cfhandle}`}>
+                    {props.cfhandle}
+                  </a>
+                </h2>
+              </div>
+            </div>
+
+            <div class="flex justify-center rounded-lg text-white my-5">
+              <div className="mr-3">
+                <div className="text-4xl font-bold">{`Hurry  `}</div>
+              </div>
+              <div>
+                <div>{timeday}</div>
+                <div>{time}</div>
+              </div>
+            </div>
             <button
               onClick={toggleModal}
-              className="w-full my-5 py-2 text-xl shadow-lg bg-white text-blue-950  hover:bg-blue-900 hover:text-white  font-semibold rounded-lg"
+              className="w-full my-5 py-2 text-xl shadow-lg bg-white text-blue-950  hover:text-[#D77F7F]  font-semibold rounded-lg"
             >
               Register
             </button>
-            <div>{props.date}</div>
-            <div>{props.time}</div>
           </div>
         </div>
-        <div class="bg-blue-900 flex flex-col items-center rounded-lg text-white mx-10 mb-10">
-          <div>{timeday}</div>
-          <div>{time}</div>
-        </div>
+
         {modal && (
           <div className="modal bg-black">
             <div onClick={toggleModal} className="overlay"></div>
@@ -99,3 +112,6 @@ export default function WorkCard(props) {
     </>
   );
 }
+
+// bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-yellow-200 via-red-500 to-fuchsia-700
+// bg-gradient-to-r from-rose-300 to-rose-500

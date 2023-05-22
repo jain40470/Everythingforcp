@@ -172,7 +172,7 @@ export default function App() {
       {count === 2 && <Compiler />}
       {count === 3 && <WorkshopPage />}
       {count === 5 && <Team />}
-      {count !== 0 && count !== 5 && <Footer />}
+      {count === 4 && <Footer />}
     </>
   );
 }
