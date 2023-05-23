@@ -14,7 +14,7 @@ export default function HomeCard(props) {
                     src={props.photo}
                     alt="Image"
                 />
-                <a>
+                </a>
             </div>
 
             <a
