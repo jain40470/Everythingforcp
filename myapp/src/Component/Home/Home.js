@@ -18,11 +18,13 @@ const Home = () => {
                     "Unlock your coding prowess. Fuel your growth with our powerful
                     resources."
                 </h1>
-                <img
-                    src={cp}
-                    alt="CP Image"
-                    className="w-80vw h-auto"
-                />
+                <div className="flex">
+                    <img
+                        src={cp}
+                        alt="CP Image"
+                        className="w-80vw"
+                    />
+                </div>
             </div>
             <div className="flex flex-col gap-6 mt-10">
                 <h2 className="text-4xl font-bold flex justify-center items-center">
