@@ -6,7 +6,7 @@ export default function Footer() {
             <div className='flex justify-center'>
                 <div> 
                     Join our community of active users on
-                    <button className='ml-3 mt-3' type='button' onClick={()=>{}}>
+                    <button className='ml-3 mt-3' type='button'>
                         <a href="https://discord.gg/Fe4cDgFs" target='_blank'><img className='rounded-lg' width={"30px"} src={discord} alt="" /></a>
                     </button>
                 </div>
