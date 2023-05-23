@@ -20,7 +20,7 @@ const NavbarC = ({
     { value: "light", label: "Light" },
   ];
   return (
-    <div className="mb-5">
+    <div className="mt-72 mb-5">
       <div className="flex place-content-evenly">
         <Select
           className="text-xl"
