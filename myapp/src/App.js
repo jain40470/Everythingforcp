@@ -97,14 +97,14 @@ export default function App() {
           <div
             className={
               Vis
-                ? "w-full bg-blue-900 text-white absolute top-[90px] left-0 flex justify-center text-center"
+                ? "w-full bg-blue-900 text-white absolute top-[64px] left-0 flex justify-center text-center"
                 : "absolute left-[-100%]"
             }
           >
             <ul>
               <li>
                 <button
-                  className="hover:text-blue-900 hover:bg-white"
+                  className="hover:text-blue-900 hover:bg-white p-3"
                   onClick={() => {
                     setCount(4);
                   }}
@@ -114,7 +114,7 @@ export default function App() {
               </li>
               <li>
                 <button
-                  className="hover:text-blue-900 hover:bg-white"
+                  className="hover:text-blue-900 hover:bg-white p-3"
                   onClick={() => {
                     setCount(0);
                   }}
@@ -124,7 +124,7 @@ export default function App() {
               </li>
               <li>
                 <button
-                  className="hover:text-blue-900 hover:bg-white"
+                  className="hover:text-blue-900 hover:bg-white p-3"
                   onClick={() => {
                     setCount(1);
                   }}
@@ -134,7 +134,7 @@ export default function App() {
               </li>
               <li>
                 <button
-                  className="hover:text-blue-900 hover:bg-white"
+                  className="hover:text-blue-900 hover:bg-white p-3"
                   onClick={() => {
                     setCount(2);
                   }}
@@ -144,7 +144,7 @@ export default function App() {
               </li>
               <li>
                 <button
-                  className="hover:text-blue-900 hover:bg-white"
+                  className="hover:text-blue-900 hover:bg-white p-3"
                   onClick={() => {
                     setCount(3);
                   }}
@@ -154,7 +154,7 @@ export default function App() {
               </li>
               <li>
                 <button
-                  className="hover:text-blue-900 hover:bg-white"
+                  className="hover:text-blue-900 hover:bg-white p-3"
                   onClick={() => {
                     setCount(5);
                   }}
