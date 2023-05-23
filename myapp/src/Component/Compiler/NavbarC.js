@@ -36,7 +36,7 @@ const NavbarC = ({
           onChange={(e) => setUserTheme(e.value)}
           placeholder={userTheme}
         />
-        <div>
+        <div className='flex flex-wrap justify-center'>
           <label className="mr-5 text-xl" for="bar">
             Font Size:
           </label>
