@@ -21,7 +21,6 @@ const NavbarC = ({
   ];
   return (
     <div className="mb-5">
-      <div className="text-2xl text-center font-bold my-5">APNA COMPILER</div>
       <div className="flex place-content-evenly">
         <Select
           className="text-xl"
