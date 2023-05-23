@@ -7,7 +7,7 @@ export default function Footer() {
                 <div> 
                     Join our community of active users on
                     <button className='ml-3 mt-3' type='button' onClick={()=>{}}>
-                        <img className='rounded-lg' width={"30px"} src={discord} alt="" />
+                        <a href="https://discord.gg/Fe4cDgFs" target='_blank'><img className='rounded-lg' width={"30px"} src={discord} alt="" /></a>
                     </button>
                 </div>
             </div>
