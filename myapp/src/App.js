@@ -6,7 +6,7 @@ import Ladder from "./Component/Ladder/Ladder";
 import Cfvis from "./Component/Visualize/Cfvis";
 import WorkshopPage from "./Component/Workshop/WorkshopPage";
 import Footer from "./Component/Footer";
-import Home from "./Component/Home";
+import Home from "./Component/Home/Home";
 import Team from "./Component/About/Team";
 
 export default function App() {
