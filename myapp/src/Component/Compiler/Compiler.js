@@ -2,7 +2,7 @@ import { useState } from "react";
 import Editor from "@monaco-editor/react";
 import NavbarC from "./NavbarC";
 import axios from "axios";
-import Loading from './loadingC.gif';
+import Loading from "./loadingC.gif";
 
 function Compiler() {
   const [userCode, setUserCode] = useState(``);
@@ -29,8 +29,10 @@ function Compiler() {
       return;
     }
 
+    const host = "https://yoyo-gdyv.onrender.com";
+
     axios
-      .post(`http://localhost:800/compile`, {
+      .post(`${host}/compile`, {
         code: userCode,
         language: userLang,
         input: userInput,
@@ -86,9 +88,9 @@ function Compiler() {
             <div className="ml-4">
               <h4>Output:</h4>
               {loading ? (
-                 <div>
-                     <img width={"20px"} src={Loading} alt="" />
-                  </div>
+                <div>
+                  <img width={"20px"} src={Loading} alt="" />
+                </div>
               ) : (
                 // <div>Loading...</div>
                 <div>
