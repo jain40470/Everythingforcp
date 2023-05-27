@@ -107,6 +107,7 @@ export default function App() {
                   className="hover:text-blue-900 hover:bg-white p-3"
                   onClick={() => {
                     setCount(4);
+                    setVis(false);
                   }}
                 >
                   HOME
@@ -117,6 +118,7 @@ export default function App() {
                   className="hover:text-blue-900 hover:bg-white p-3"
                   onClick={() => {
                     setCount(0);
+                    setVis(false);
                   }}
                 >
                   VISUALIZEME
@@ -127,6 +129,7 @@ export default function App() {
                   className="hover:text-blue-900 hover:bg-white p-3"
                   onClick={() => {
                     setCount(1);
+                    setVis(false);
                   }}
                 >
                   ELEVATOR
@@ -137,6 +140,7 @@ export default function App() {
                   className="hover:text-blue-900 hover:bg-white p-3"
                   onClick={() => {
                     setCount(2);
+                    setVis(false);
                   }}
                 >
                   COMPILER
@@ -147,6 +151,7 @@ export default function App() {
                   className="hover:text-blue-900 hover:bg-white p-3"
                   onClick={() => {
                     setCount(3);
+                    setVis(false);
                   }}
                 >
                   WORKSHOP
@@ -157,6 +162,7 @@ export default function App() {
                   className="hover:text-blue-900 hover:bg-white p-3"
                   onClick={() => {
                     setCount(5);
+                    setVis(false);
                   }}
                 >
                   OUR TEAM
