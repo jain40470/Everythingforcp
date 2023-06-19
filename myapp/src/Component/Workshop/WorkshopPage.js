@@ -1,12 +1,13 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import Loader from "./loader.gif";
 
 import WorkshopD from "./Workshop";
 import WorkCard from "./WorkCard";
 
 export default function WorkshopPage() {
   const [data, setData] = useState([]);
-  const [timer,setTimer] = useState(true);
+  const [timer, setTimer] = useState(true);
   // const host = "http://localhost:800";
   const host = "https://yoyo-gdyv.onrender.com";
 
@@ -18,6 +19,7 @@ export default function WorkshopPage() {
 
       const workdata = await response.json();
       setData(workdata);
+      setTimer(false);
     };
 
     fun();
@@ -26,7 +28,7 @@ export default function WorkshopPage() {
   return (
     <div className="my-20">
       <div className="flex flex-wrap justify-evenly mb-20">
-       {timer ? <img width={"200px"} src={Loader} alt="" /> : ""}
+        {timer ? <img width={"200px"} src={Loader} alt="" /> : ""}
         {data.map((item) => {
           return (
             <WorkCard

@@ -9,7 +9,7 @@ const Home = () => {
           className="text-4xl font-bold text-center"
           style={{ fontFamily: "Fira Code, monospace" }}
         >
-          "Unlock your coding prowess. Fuel your growth with our powerful
+          "Unlock your coding powers. Fuel your growth with our powerful
           resources."
         </h1>
       </div>
