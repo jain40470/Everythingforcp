@@ -49,12 +49,16 @@ cd Everythingforcp
 
 2. **Backend Setup:**
 
+```bash
+
 cd backend
 npm install
 # Create a .env file and add your environment variables (see below)
 npm start
 
 3. **Frontend Setup:**
+
+```bash
 
 cd ../myapp
 npm install
