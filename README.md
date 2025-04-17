@@ -43,13 +43,10 @@ Everythingforcp/
 
 1. **Clone the repository:**
 
-```bash
 git clone https://github.com/jain40470/Everythingforcp.git
 cd Everythingforcp
 
 2. **Backend Setup:**
-
-```bash
 
 cd backend
 npm install
@@ -57,8 +54,6 @@ npm install
 npm start
 
 3. **Frontend Setup:**
-
-```bash
 
 cd ../myapp
 npm install
