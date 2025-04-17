@@ -43,21 +43,26 @@ Everythingforcp/
 
 1. **Clone the repository:**
 
+```
 git clone https://github.com/jain40470/Everythingforcp.git
 cd Everythingforcp
+```
 
 2. **Backend Setup:**
 
+```
 cd backend
 npm install
-# Create a .env file and add your environment variables (see below)
 npm start
+```
 
 3. **Frontend Setup:**
 
+```
 cd ../myapp
 npm install
 npm start
+```
 
 [Visit http://localhost:3000 to view the app locally.]
 
@@ -65,9 +70,11 @@ npm start
 
 Create a .env file in the backend/ directory with:
 
+```
 MONGO_URI=your_mongodb_connection_string
 EMAIL_USER=your_email@example.com
 EMAIL_PASS=your_email_password_or_app_password
+```
 
 📦 Features
 
