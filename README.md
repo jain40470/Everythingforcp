@@ -1,14 +1,12 @@
 # Everythingforcp
 
-A dynamic full-stack website tailored for competitive programming enthusiasts to enhance user
-experience and engagement.
-• Effortlessly integrated a multilingual code compiler using the CODEX API , which can boost user engagement.
-• Introduced an Elevator feature to capture verdicts and monitor performance over time, which can lead to
-improvement in user engagement.
-• Developed VisualizeMe using Chart.js to offer insights into the CP journey, which can lead to increase in user
-motivation and goal-setting.Facilitated workshops with email notifications using Nodemailer, which can enhance user
-satisfaction.
-• Facilitated workshops with email notifications using Nodemailer, which can enhance user satisfaction.
+A dynamic full-stack website tailored for competitive programming enthusiasts to enhance user experience and engagement.
+
+- 🧠 Integrated a multilingual code compiler using the CODEX API to boost engagement.
+- 📊 Introduced an Elevator feature to capture verdicts and monitor performance over time.
+- 📈 Developed **VisualizeMe** using Chart.js to offer insights into a user’s CP journey and encourage goal-setting.
+- 📬 Facilitated workshops with email notifications via Nodemailer to improve user satisfaction.
+
 
 ## 🌐 Live Demo
 
