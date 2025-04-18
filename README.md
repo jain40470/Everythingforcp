@@ -21,16 +21,19 @@ A dynamic full-stack website tailored for competitive programming enthusiasts to
 
 ## 📁 Project Structure
 
+```
+
 Everythingforcp/
 
-- ├── backend/               # Backend server code (Express, Mongoose)
-- ├── myapp/                 # Frontend React application (built with React + Tailwind CSS)
-- ├── node_modules/          # Project dependencies
-- ├── .gitattributes         # Git configuration file
-- ├── .DS_Store              # System file (can be ignored)
-- ├── package.json           # NPM package configuration
-- ├── package-lock.json      # Dependency lock file
+├── backend/               # Backend server code (Express, Mongoose)
+├── myapp/                 # Frontend React application (built with React + Tailwind CSS)
+├── node_modules/          # Project dependencies
+├── .gitattributes         # Git configuration file
+├── .DS_Store              # System file (can be ignored)
+├── package.json           # NPM package configuration
+├── package-lock.json      # Dependency lock file
 
+```
 
 ## 🚀 Getting Started
 
@@ -93,3 +96,4 @@ EMAIL_PASS=your_email_password_or_app_password
 
 This project is licensed under the MIT License.
 
+> Crafted with ❤️ for competitive programming enthusiasts.
